@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "../ui/button";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -8,7 +9,13 @@ const Header = () => {
       <div className="w-1/3">
         {" "}
         <Link href="/">
-          <h1 className="text-2xl font-bold">LOGO</h1>
+          <Image
+            src="https://cdn.sanity.io/images/6jywt20u/production/ed83f5f1e94efb47572d503f53456dcff902b81c-200x32.svg?w=200&auto=format"
+            alt="logo"
+            height={32}
+            width={200}
+            className="bg-[#0056C0]"
+          />
         </Link>
       </div>
 
