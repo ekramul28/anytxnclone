@@ -1,11 +1,13 @@
-import Button from "@/components/ui/button";
+import Footer from "@/components/shared/Footer";
+import Header from "@/components/shared/Header";
 import React from "react";
 
 const HomePage = () => {
   return (
     <div>
       <h1>
-        This is Home page <Button className="bg-red-700">hello</Button>
+        <Header />
+        <Footer />
       </h1>
     </div>
   );
