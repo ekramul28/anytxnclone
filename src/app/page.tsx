@@ -1,4 +1,5 @@
 import Banner from "@/components/banner/Banner";
+import Company from "@/components/company/Company";
 import ContactUs from "@/components/contactus/contactUs";
 import FinanceCarousel from "@/components/finance/Finance";
 import HumanCentred from "@/components/humanCentred/HumanCentred";
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Uncovering />
       <FinanceCarousel />
       <HumanCentred />
+      <Company />
       <ContactUs />
       <Footer />
     </div>
