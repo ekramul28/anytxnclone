@@ -6,7 +6,7 @@ type ButtonProps = {
 
 const Button = ({ children, className = "", ...props }: ButtonProps) => {
   const baseStyles =
-    "px-4 py-2 rounded-lg font-medium transition bg-[#FE8B53] text-white hover:bg-gray-900";
+    "px-5 py-3 rounded font-medium transition  font-bold text-white ";
 
   return (
     <button className={`${baseStyles} ${className}`} {...props}>

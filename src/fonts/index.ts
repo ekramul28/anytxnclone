@@ -1,7 +1,7 @@
-import { IBM_Plex_Sans, Quicksand } from "next/font/google";
+import { IBM_Plex_Sans, Montserrat } from "next/font/google";
 
-export const quickSand = Quicksand({
-  subsets: ["latin"],
+export const quickSand = Montserrat({
+  subsets: ["latin-ext"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
