@@ -1,5 +1,6 @@
 import Banner from "@/components/banner/Banner";
 import ContactUs from "@/components/contactus/contactUs";
+import FinanceCarousel from "@/components/finance/Finance";
 import HumanCentred from "@/components/humanCentred/HumanCentred";
 import Footer from "@/components/shared/Footer";
 import Uncovering from "@/components/Uncovering/Uncovering";
@@ -11,6 +12,7 @@ const HomePage = () => {
       {/* <Header /> */}
       <Banner />
       <Uncovering />
+      <FinanceCarousel />
       <HumanCentred />
       <ContactUs />
       <Footer />
