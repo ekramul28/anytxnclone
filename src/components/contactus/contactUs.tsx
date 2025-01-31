@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ContactUs = () => {
   return (
-    <div className="relative bg-[url('https://res.cloudinary.com/dvtdneocc/image/upload/v1738250222/WaveLinesDesktop2_fogjdl.svg')] bg-cover bg-center bg-[#005BC4] text-white py-20 px-6 flex flex-col items-center text-center">
+    <div className="relative bg-[url('https://res.cloudinary.com/dvtdneocc/image/upload/v1738250222/ctaMobileWaveLines_yt6sav.svg')] bg-cover bg-center bg-[#005BC4] text-white py-20 px-6 flex flex-col items-center text-center">
       {/* Overlay for better text visibility */}
       <div className="absolute inset-0  opacity-50"></div>
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center px-6 py-4 bg-white shadow-md">
+    <header className="flex justify-between items-center px-6 py-4  ">
       {/* Left Placeholder for spacing */}
       <div className="w-1/3">
         {" "}
@@ -14,21 +14,21 @@ const Header = () => {
             alt="logo"
             height={32}
             width={200}
-            className="bg-[#0056C0]"
+            className=""
           />
         </Link>
       </div>
 
       {/* Centered Logo */}
       <div className="w-1/3 flex justify-center">
-        <nav className="hidden md:flex gap-4">
-          <Link href="/" className="text-gray-700 hover:text-black">
+        <nav className="hidden md:flex gap-4 ">
+          <Link href="/" className="text-white hover:text-white">
             Home
           </Link>
-          <Link href="/about" className="text-gray-700 hover:text-black">
+          <Link href="/about" className="text-white hover:text-white">
             About
           </Link>
-          <Link href="/services" className="text-gray-700 hover:text-black">
+          <Link href="/services" className="text-white hover:text-white">
             Services
           </Link>
         </nav>
@@ -36,7 +36,7 @@ const Header = () => {
 
       {/* Right Nav & Button */}
       <div className="w-1/3 flex justify-end items-center gap-4">
-        <Button className="bg-black text-white px-4 py-2">Contact Us</Button>
+        <Button>Contact Us</Button>
       </div>
     </header>
   );

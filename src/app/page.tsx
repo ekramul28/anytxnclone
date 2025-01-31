@@ -1,16 +1,19 @@
+import Banner from "@/components/banner/Banner";
 import ContactUs from "@/components/contactus/contactUs";
+import HumanCentred from "@/components/humanCentred/HumanCentred";
 import Footer from "@/components/shared/Footer";
-import Header from "@/components/shared/Header";
+import Uncovering from "@/components/Uncovering/Uncovering";
 import React from "react";
 
 const HomePage = () => {
   return (
     <div>
-      <h1>
-        <Header />
-        <ContactUs />
-        <Footer />
-      </h1>
+      {/* <Header /> */}
+      <Banner />
+      <Uncovering />
+      <HumanCentred />
+      <ContactUs />
+      <Footer />
     </div>
   );
 };
