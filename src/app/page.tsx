@@ -14,8 +14,8 @@ const HomePage = () => {
       {/* <Header /> */}
       <Banner />
       <Uncovering />
-      <FinanceCarousel />
       <HumanCentred />
+      <FinanceCarousel />
       <Experience />
       <Company />
       <ContactUs />

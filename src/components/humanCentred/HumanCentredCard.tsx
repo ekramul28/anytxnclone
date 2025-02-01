@@ -30,7 +30,7 @@ const HumanCentredCard = () => {
         {cardData?.map(({ id, icon, title, description }) => (
           <div key={id} className="bg-[#F8FCFF] p-8 ">
             <div className="">{icon}</div>
-            <h3 className="text-xl font-semibold">{title}</h3>
+            <h3 className="text-2xl font-semibold my-5 ">{title}</h3>
             <p className="text-gray-500">{description}</p>
           </div>
         ))}

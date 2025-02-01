@@ -3,52 +3,31 @@ import Header from "../shared/Header";
 import Button from "../ui/button";
 import Image from "next/image";
 import { BiChevronRight } from "react-icons/bi";
-import Container from "../shared/Contenar";
 
 const Banner = () => {
   return (
-    <figure className="z-10 [clip-path:polygon(0%_0%,100%_0%,100%_90%,0%_100%)]">
-      <div className="relative h-[115vh] w-full overflow-hidden bg-gradient-to-r from-blue-950 to-blue-800 flex flex-col  justify-center text-white">
+    <figure className="z-10 [clip-path:polygon(0%_0%,100%_0%,100%_90%,0%_100%)] ">
+      <div className="relative h-[115vh] w-full z-0 overflow-hidden bg-gradient-to-r from-[#1B7BEA] to-[#1274e5] flex flex-col  justify-center text-white">
         {/* Header - Absolute Position */}
         <div className="absolute top-0 left-0 w-full z-20">
           <Header />
         </div>
 
-        {/* Background Full-Width Image */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="h-[200px] absolute w-full overflow-hidden ">
           <Image
             src="https://res.cloudinary.com/dvtdneocc/image/upload/v1738250222/WaveLinesDesktop2_fogjdl.svg"
             alt="Background"
             layout="fill"
             objectFit="cover"
-            objectPosition="center"
-            className="opacity-20"
+            objectPosition="right"
+            className="opacity-100 object-cover"
           />
         </div>
-
-        {/* Floating Decorative Background Images */}
-        <div className="absolute bottom-0 left-0 w-full flex justify-between opacity-30">
-          <Image
-            src="https://res.cloudinary.com/dvtdneocc/image/upload/v1738250222/ctaMobileWaveLines_yt6sav.svg"
-            alt="Background Shape 1"
-            width={500}
-            height={400}
-            className="animate-float"
-          />
-          <Image
-            src="https://res.cloudinary.com/dvtdneocc/image/upload/v1738250227/content-image-1_jsnidb.png"
-            alt="Background Shape 2"
-            width={500}
-            height={400}
-            className="animate-float"
-          />
-        </div>
-
         {/* Banner Content */}
         <div className="relative container mx-auto z-20 px-4 text-center md:text-left">
           {/* Left Section */}
           <div className=" w-1/2">
-            <h1 className="text-5xl md:text-6xl font-bold">
+            <h1 className="text-8xl md:text-6xl font-bold">
               Embrace the future of finance
             </h1>
             <p className="mt-4 text-lg md:text-xl">

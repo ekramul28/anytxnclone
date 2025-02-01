@@ -6,8 +6,8 @@ const HumanCentred = () => {
     <div className="container mx-auto">
       <div className="grid justify-center items-center">
         <div className="text-center">
-          <h2 className="text-[#1F80F0]">OUR PHILOSOPHY</h2>
-          <h1 className="text-2xl font-bold">Human-centred innovation</h1>
+          <h2 className="text-[#1F80F0] my-6 font-bold">OUR PHILOSOPHY</h2>
+          <h1 className="text-4xl font-bold mb-8">Human-centred innovation</h1>
         </div>
         <div className="flex items-end justify-start h-full w-full">
           <Image
@@ -15,7 +15,7 @@ const HumanCentred = () => {
             height={1000}
             width={1000}
             alt="bg"
-            className=""
+            className="h-[400px] w-full"
           />
         </div>
       </div>

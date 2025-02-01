@@ -8,18 +8,18 @@ const Uncovering = () => {
       <div className="flex-1 space-y-6">
         {/* Text Content */}
         <div className=" text-center md:text-left">
-          <p className="text-lg font-semibold uppercase tracking-wide">
+          <p className="text-lg font-semibold  tracking-wide text-[#1F80F0]">
             Powering The Future of Finance
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold mt-2">
+          <h1 className="text-5xl md:text-5xl font-bold mt-2">
             Uncovering new ways to delight customers
           </h1>
-          <p className="mt-4 text-lg text-gray-300">
+          <p className="mt-4 text-lg font-semibold">
             AnyTech is revolutionizing financial technology by introducing
             innovative and real-time transaction account processing
             capabilities, specifically designed for retail financial services.
           </p>
-          <p className="mt-2 text-lg text-gray-300">
+          <p className="mt-2 text-lg text-gray-400">
             Our modern approach surpasses traditional banking and card
             processing systems, empowering you with the most advanced technology
             for lasting success.
