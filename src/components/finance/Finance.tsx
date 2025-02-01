@@ -44,7 +44,7 @@ const FinanceCarousel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full max-w-4xl mx-auto text-center space-y-6">
+    <div className="w-full container mx-auto text-center space-y-6">
       {/* Titles with Active Highlight */}
       <div className="flex justify-center gap-4">
         {carouselData.map((item, index) => (

@@ -3,7 +3,7 @@ import React from "react";
 
 const Uncovering = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-8 p-8">
+    <div className="flex container mx-auto flex-col md:flex-row items-center justify-between gap-8 p-8">
       {/* Left Content (SVG & Text) */}
       <div className="flex-1 space-y-6">
         {/* Text Content */}

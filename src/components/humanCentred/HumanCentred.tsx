@@ -3,7 +3,7 @@ import HumanCentredCard from "./HumanCentredCard";
 
 const HumanCentred = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="grid justify-center items-center">
         <div className="text-center">
           <h2 className="text-[#1F80F0]">OUR PHILOSOPHY</h2>

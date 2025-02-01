@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 
 const Experience = () => {
   return (
-    <div className="text-center space-y-6 p-6">
+    <div className="text-center space-y-6 p-6 container mx-auto">
       <h1 className="text-[#0F6BD5] text-2xl font-bold">TRUSTED BY THE BEST</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">

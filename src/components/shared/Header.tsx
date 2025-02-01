@@ -9,9 +9,9 @@ const megaMenuItems = [
   {
     title: "Solutions",
     links: [
-      { name: "E-commerce", href: "/ecommerce" },
-      { name: "SaaS", href: "/saas" },
-      { name: "Finance", href: "/finance" },
+      { name: "AnyCaaS", href: "/AnyCaaS" },
+      { name: "AnyBaaS", href: "/AnyBaaS" },
+      { name: "AnyPaaS", href: "/AnyPaaS" },
     ],
   },
 ];
@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center px-6 py-4">
+    <header className="flex container mx-auto justify-between items-center px-6 py-4">
       {/* Left Logo */}
       <div className="w-1/3">
         <Link href="/">
@@ -42,10 +42,11 @@ const Header = () => {
       <div className="w-1/3 hidden md:flex justify-center">
         <nav className="flex gap-6">
           <div className="relative ">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center ">
               <button
-                onClick={toggleMegaMenu}
-                className="text-white hover:text-white  gap-1"
+                onMouseEnter={toggleMegaMenu}
+                // onMouseLeave={toggleMegaMenu}
+                className="text-white hover:text-white  flex justify-center items-center gap-1"
               >
                 Solutions{" "}
                 {isMegaMenuOpen ? (
@@ -58,7 +59,10 @@ const Header = () => {
 
             {isMegaMenuOpen && (
               <div className="absolute left-0 mt-2 w-56 bg-white font-bold shadow-lg rounded-lg p-3 space-y-3">
-                <div className="p-4 bg-gray-100 rounded-md">
+                <div
+                  onMouseLeave={toggleMegaMenu}
+                  className="p-4 bg-gray-100 rounded-md"
+                >
                   {megaMenuItems[0].links.map((link, index) => (
                     <Link
                       key={index}
@@ -84,9 +88,11 @@ const Header = () => {
 
       {/* Right Side with Button and Hamburger for Mobile */}
       <div className="w-1/3 flex justify-end items-center gap-4">
-        <Button className="flex gap-2 justify-center items-center border ">
-          Contact Us <BiChevronRight />
-        </Button>
+        <div className="hidden md:block">
+          <Button className="flex gap-2  justify-center items-center border ">
+            Contact Us <BiChevronRight />
+          </Button>
+        </div>
 
         {/* Hamburger menu for mobile */}
         <div className="md:hidden">
