@@ -1,5 +1,9 @@
+"use client";
 import React from "react";
 import { FaLightbulb, FaRegSmileBeam, FaUserAlt } from "react-icons/fa";
+import Card from "../ui/card";
+import { motion } from "framer-motion";
+
 const cardData = [
   {
     id: 1,
@@ -23,20 +27,36 @@ const cardData = [
       "We seamlessly combine cutting-edge technologies, resulting in an unparalleled fintech experience for financial institutions.",
   },
 ];
-const HumanCentredCard = () => {
+
+const CardList = () => {
   return (
-    <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
-        {cardData?.map(({ id, icon, title, description }) => (
-          <div key={id} className="bg-[#F8FCFF] p-8 ">
-            <div className="">{icon}</div>
-            <h3 className="text-2xl font-semibold my-5 ">{title}</h3>
-            <p className="text-gray-500">{description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    <motion.div
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8"
+      initial="hidden"
+      animate="show"
+      variants={{
+        hidden: {
+          opacity: 0,
+        },
+        show: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.3,
+          },
+        },
+      }}
+    >
+      {cardData.map(({ id, icon, title, description }) => (
+        <Card
+          key={id}
+          icon={icon}
+          title={title}
+          description={description}
+          className="transition-all duration-300 ease-in-out"
+        />
+      ))}
+    </motion.div>
   );
 };
 
-export default HumanCentredCard;
+export default CardList;
