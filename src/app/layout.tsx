@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { quickSand } from "@/fonts";
+import Footer from "@/components/shared/Footer";
+import ContactUs from "@/components/contactus/contactUs";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quickSand.className}  antialiased`}>{children}</body>
+      <body className={`${quickSand.className}  antialiased`}>
+        {children}
+        <ContactUs />
+        <Footer />
+      </body>
     </html>
   );
 }

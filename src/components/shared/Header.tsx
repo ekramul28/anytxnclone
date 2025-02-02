@@ -76,11 +76,16 @@ const Header = () => {
               </div>
             )}
           </div>
-
-          <Link href="/services" className="text-white hover:text-white">
+          <Link
+            href="/service"
+            className="text-white border-b-2 border-transparent hover:border-white transition-all duration-700 ease-in-out"
+          >
             Services
           </Link>
-          <Link href="/about" className="text-white hover:text-white">
+          <Link
+            href="/about"
+            className="text-white border-b-2 border-transparent hover:border-white transition-all duration-700 ease-in-out"
+          >
             About
           </Link>
         </nav>

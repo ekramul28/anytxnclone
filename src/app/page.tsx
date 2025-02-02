@@ -18,8 +18,6 @@ const HomePage = () => {
       <FinanceCarousel />
       <Experience />
       <Company />
-      <ContactUs />
-      <Footer />
     </div>
   );
 };
