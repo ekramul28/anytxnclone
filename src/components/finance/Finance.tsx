@@ -60,11 +60,15 @@ const FinanceCarousel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full container mx-auto text-center space-y-6">
+    <div className="w-full container mx-auto text-center space-y-6 px-4 sm:px-6 md:px-8">
       {/* Titles with Active Highlight */}
-      <h1 className="text-[#1F80F0] mt-7">TECHNOLOGY BUILT FOR YOU</h1>
-      <h1 className="text-7xl font-bold">The future of finance</h1>
-      <div className="flex justify-center gap-8">
+      <h1 className="text-[#1F80F0] mt-7 text-2xl sm:text-3xl md:text-4xl">
+        TECHNOLOGY BUILT FOR YOU
+      </h1>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+        The future of finance
+      </h1>
+      <div className="flex justify-center gap-8 flex-wrap">
         {carouselData.map((item, index) => (
           <span
             key={index}
@@ -82,34 +86,35 @@ const FinanceCarousel = () => {
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
-            className="relative  p-6 bg-white shadow-lg rounded-lg h-[450px] w-[80%]"
+            className="relative p-6 bg-white shadow-lg rounded-lg h-[450px] sm:h-[500px] md:h-[500px] w-[90%] sm:w-[80%] md:w-[90%]"
             initial={{ opacity: 0, x: -70 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 100 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="flex  p-9">
-              <div className="w-1/2 text-start">
-                <h3 className="mt-4 text-xl font-bold text-[#1F80F0] ">
+            <div className="flex flex-col sm:flex-row md:p-9 p-4 gap-6">
+              <div className="w-full sm:w-1/2 text-start  flex-1 order-2 lg:order-1">
+                <h3 className="md:mt-4 text-xl font-bold text-[#1F80F0]">
                   {carouselData[currentIndex].title}
                 </h3>
-                <h3 className="mt-6 text-xl font-bold ">
+
+                <h3 className="md:mt-6 text-xl font-bold">
                   {carouselData[currentIndex].titleOfProduct}
                 </h3>
-                <p className="mt-2 text-black font-semibold">
+                <p className="md:mt-2 text-black font-semibold">
                   {carouselData[currentIndex].description}
                 </p>
-                <p className="mt-4 text-gray-600">
+                <p className="md:mt-4 text-gray-600 hidden lg:block">
                   {carouselData[currentIndex].description2}
                 </p>
               </div>
-              <div className="w-1/2">
+              <div className="w-full sm:w-1/2 flex-1 order-1 lg:order-2">
                 <Image
                   src={carouselData[currentIndex].image}
                   width={500}
                   height={500}
                   alt={carouselData[currentIndex].title}
-                  className="mx-auto rounded-lg h-[300px] "
+                  className="mx-auto rounded-lg h-[100px] md:h-[300px]  object-cover"
                 />
               </div>
             </div>
