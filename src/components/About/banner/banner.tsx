@@ -5,10 +5,7 @@ const AboutBanner = () => {
   const gradient = (
     <div
       style={{
-        background: `radial-gradient(300.77% 113.48% at 0% 99.92%, 
-          #FE8B53 15.56%, 
-          #1F80F0 25.98%, 
-          #014AB8 40%), 
+        background: `radial-gradient(300.77% 113.48% at 0% 99.92%, #FE8B53 15.56%, #1F80F0 25.98%, #014AB8 40%), 
           #1F80F0`,
         clipPath: "polygon(0 80%, 100% 57%, 100% 65%, 0 100%)",
         width: "100%",
@@ -21,10 +18,10 @@ const AboutBanner = () => {
   return (
     <>
       <DynamickBanner
-        title=" Our Service"
-        subtitle="Reimagining banking solutions"
-        description="Enabling financial institutions to create unparalleled customer
-              experiences."
+        title=" ABOUT US"
+        subtitle="Paving the way 
+ahead for finance"
+        description="We’re building technologies that will power the future of banking and beyond."
         gradient={gradient}
       />
     </>
