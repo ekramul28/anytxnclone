@@ -2,10 +2,21 @@ import { links } from "@/Link/CompanyLink";
 import Image from "next/image";
 import React from "react";
 
-const CompanyMarquee = () => {
+interface MarqueeProps {
+  speed?: string;
+  bgColor?: string;
+  className?: string;
+}
+
+const CompanyMarquee: React.FC<MarqueeProps> = ({
+  speed = "animate-marquee",
+  className = "",
+}) => {
   return (
-    <div className="overflow-hidden whitespace-nowrap relative w-full bg-gray-100 py-4">
-      <div className="flex gap-6 animate-marquee">
+    <div
+      className={`overflow-hidden whitespace-nowrap relative w-full  ${className}`} // Manually merge classes here
+    >
+      <div className={`flex gap-10 py-4 ${speed}`}>
         {links.map((src, index) => (
           <Image
             height={200}

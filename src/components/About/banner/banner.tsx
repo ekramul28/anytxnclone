@@ -1,13 +1,10 @@
 import Header from "@/components/shared/Header";
-import CursorMovement from "@/utils/cursoreMoving";
 import Image from "next/image";
 import React from "react";
 
 const AboutBanner = () => {
   return (
     <>
-      <CursorMovement />
-
       <div className="relative  [clip-path:polygon(0%_0%,100%_0%,100%_70%,0%_100%)] bg-gradient-to-r from-[#1B7BEA] to-[#1274e5] min-h-screen flex flex-col justify-center items-center text-white">
         {/* Header */}
         <div className="absolute top-0 left-0 w-full z-30">

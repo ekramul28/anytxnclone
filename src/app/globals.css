@@ -50,6 +50,11 @@ body {
   width: max-content;
   animation: marquee 15s linear infinite;
 }
+.animate-marqueeForAbout {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
 
 @keyframes slideInFromLeft {
   0% {

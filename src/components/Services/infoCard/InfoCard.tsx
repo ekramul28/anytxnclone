@@ -1,21 +1,26 @@
 import Button from "@/components/ui/button";
+import InfoCard from "@/components/ui/infoCard";
 import React from "react";
 
-const InfoCard = () => {
+const ServiceInfoCard = () => {
   return (
-    <div className="flex justify-between items-center  p-8 mt-7 bg-[#1876E4] text-white rounded-lg shadow-lg w-[80%] mx-auto">
-      <div>
-        <h2 className="text-3xl font-bold">Your Title Here</h2>
-        <p className="mt-3 text-lg">
-          This is a description where you can explain more details about your
-          content.
-        </p>
-      </div>
-      <div>
-        <Button>Click Me</Button>
-      </div>
+    <div>
+      <InfoCard
+        title="Your Title Here"
+        description=" This is a description where you can explain more details about your
+          content"
+        buttonText="Click me"
+        bgColor="#014AB8"
+        textColor="white"
+        buttonColor="#FE8B53"
+        // bgImages={[
+        //   "https://example.com/image1.jpg",
+        //   "https://example.com/image2.jpg",
+        //   "https://example.com/image3.jpg",
+        // ]}
+      />
     </div>
   );
 };
 
-export default InfoCard;
+export default ServiceInfoCard;
