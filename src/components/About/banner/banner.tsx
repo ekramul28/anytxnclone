@@ -31,6 +31,9 @@ const AboutBanner = () => {
         {/* Background Images */}
         <div className="absolute w-full h-full z-30">
           {/* Image 1 - Positioned at the bottom left */}
+        </div>
+        <div className="absolute w-full h-full z-30">
+          {/* Image 1 - Positioned at the bottom left */}
           <Image
             src="https://res.cloudinary.com/dvtdneocc/image/upload/v1738250223/2_jutk3h.svg"
             alt="Background"

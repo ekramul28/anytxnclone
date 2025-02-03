@@ -6,9 +6,12 @@ interface InfoCardProps {
   description?: string;
   buttonText?: string;
   bgColor?: string;
-  textColor?: string;
+  textClass?: string;
+  descriptionClass?: string;
   buttonColor?: string;
   bgImages?: string[];
+  height?: string;
+  width?: string;
 }
 
 const InfoCard: React.FC<InfoCardProps> = ({
@@ -16,28 +19,33 @@ const InfoCard: React.FC<InfoCardProps> = ({
   description,
   buttonText,
   bgColor,
-  textColor,
+  textClass,
+  descriptionClass,
   buttonColor,
   bgImages = [],
+  height = "auto",
+  width = "90%",
 }) => {
   const bgImage = bgImages.length > 0 ? bgImages.join(", ") : undefined;
 
   return (
     <div
-      className={`flex justify-between items-center p-8 mt-7 rounded-lg shadow-lg w-[80%] mx-auto`}
+      className={`flex justify-between items-center p-8  mt-7 rounded-lg shadow-lg mx-auto`}
       style={{
         backgroundColor: bgColor,
         backgroundImage: bgImage ? `url(${bgImage})` : undefined,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        height,
+        width,
       }}
     >
       <div>
-        <h2 className={`text-3xl font-bold text-${textColor}`}>{title}</h2>
-        <p className={`mt-3 text-lg text-${textColor}`}>{description}</p>
+        <h2 className={` font-bold ${textClass}`}>{title}</h2>
+        <p className={`mt-3 ${descriptionClass}`}>{description}</p>
       </div>
       <div>
-        <Button className="font-bold " style={{ backgroundColor: buttonColor }}>
+        <Button className="font-bold" style={{ backgroundColor: buttonColor }}>
           {buttonText}
         </Button>
       </div>
