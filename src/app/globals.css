@@ -135,3 +135,17 @@ body {
 .clip-path-image {
   clip-path: polygon(70% 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+@keyframes slowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-slow-bounce {
+  animation: slowBounce 15s ease-in-out infinite;
+}

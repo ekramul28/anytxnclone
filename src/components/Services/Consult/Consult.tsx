@@ -1,11 +1,10 @@
-import ReuseableCovering from "@/components/ui/reuseableCovering";
+import ReuseableCovering2 from "@/components/ui/reuseAbleCovering2";
 import React from "react";
-import { FaLightbulb } from "react-icons/fa";
 
 const Consult = () => {
   return (
     <div>
-      <ReuseableCovering
+      <ReuseableCovering2
         title="What We Do"
         subtitle="The power of data"
         description="In today's rapidly evolving financial landscape, banks and financial institutions face unprecedented challenges. At AnyTech, we understand the critical need for continuous innovation and strategic decision-making in order to thrive."
@@ -14,8 +13,37 @@ const Consult = () => {
         imageAlt="cover"
         imageWidth={500}
         imageHeight={500}
-        icon={<FaLightbulb />}
-        backgroundImage="https://path-to-your-background-image.jpg" // Set the background image URL
+        backgroundImage="https://example.com/background.jpg"
+        graphicalElements={[
+          {
+            src: "https://i.postimg.cc/dVzkSpBf/finance-logo-1.png",
+            alt: "Image 1",
+            className:
+              "w-20 h-20 ml-6 -mt-14 rounded-full shadow-xl animate-slow-bounce",
+          },
+          {
+            src: "https://i.postimg.cc/dVzkSpBf/finance-logo-1.png",
+            alt: "Image 2",
+            className:
+              "w-20 h-20 mr-10 mt-40 rounded-full shadow-xl animate-slow-bounce",
+          },
+          {
+            src: "https://i.postimg.cc/dVzkSpBf/finance-logo-1.png",
+            alt: "Image 3",
+            className:
+              "w-28 h-28 ml-60 -mt-6 rounded-full shadow-xl animate-slow-bounce",
+          },
+          {
+            src: "/2.svg",
+            alt: "Graphical Element 2",
+            className: "w-28 h-28 -ml-[100%] mt-[90%]",
+          },
+          {
+            src: "/3.svg",
+            alt: "Graphical Element 3",
+            className: "w-40 h-72 ml-24 -mt-24",
+          },
+        ]}
         textColor="#1F80F0"
         bgColor="#F8FCFF"
       />
