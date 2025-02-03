@@ -28,7 +28,7 @@ const Header = () => {
   // Check if the user has scrolled
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 100) {
         setIsScrolled(true); // Set the header to white if scrolled
       } else {
         setIsScrolled(false); // Set the header back to default when at the top
@@ -45,8 +45,10 @@ const Header = () => {
 
   return (
     <header
-      className={`flex   justify-between items-center px-6 py-4 w-full fixed top-0 left-0 ${
-        isScrolled ? "bg-white text-black z-50" : "bg-transparent text-white"
+      className={`flex z-50  justify-between items-center px-6 py-4 w-full fixed top-0 left-0 ${
+        isScrolled
+          ? "bg-stone-300  shadow-lg bg-blur-2xl text-black z-50"
+          : "bg-transparent text-white"
       }`}
     >
       {/* Left Logo */}

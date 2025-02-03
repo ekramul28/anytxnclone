@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../shared/Header";
 import Button from "../ui/button";
-import Image from "next/image";
 import { BiChevronRight } from "react-icons/bi";
 
 const Banner = () => {
