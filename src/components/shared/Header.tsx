@@ -154,13 +154,17 @@ const Header = () => {
       <div className="w-1/3 flex justify-end items-center gap-4">
         <div className="hidden md:block">
           {isScrolled ? (
-            <Button className="flex gap-2 justify-center  bg-orange-500 items-center border ">
-              Contact Us <BiChevronRight />
-            </Button>
+            <Link href={"/contact"}>
+              <Button className="flex gap-2 justify-center  bg-orange-500 items-center border ">
+                Contact Us <BiChevronRight />
+              </Button>
+            </Link>
           ) : (
-            <Button className="flex gap-2 justify-center items-center border ">
-              Contact Us <BiChevronRight />
-            </Button>
+            <Link href={"/contact"}>
+              <Button className="flex gap-2 justify-center items-center border ">
+                Contact Us <BiChevronRight />
+              </Button>
+            </Link>
           )}
         </div>
 
