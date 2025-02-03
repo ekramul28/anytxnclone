@@ -1,15 +1,16 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import React, { ReactNode } from "react";
 
 interface UncoveringProps {
-  title: string;
+  title: any;
   subtitle: string;
   description: string;
   additionalDescription?: string;
   imageSrc: string;
   imageAlt: string;
-  icon: ReactNode; // Icon as a ReactNode
-  backgroundImage: string; // Background image source URL
+  icon: ReactNode;
+  backgroundImage: string;
   imageWidth?: number;
   imageHeight?: number;
   textColor?: string;
@@ -50,6 +51,7 @@ const ReuseableCovering: React.FC<UncoveringProps> = ({
             {subtitle}
           </p>
           <h1 className="text-5xl md:text-5xl font-bold mt-2">{title}</h1>
+
           <p className="mt-4 text-lg font-semibold">{description}</p>
           {additionalDescription && (
             <p className="mt-2 text-lg text-gray-400">

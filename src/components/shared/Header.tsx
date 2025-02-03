@@ -4,7 +4,6 @@ import Link from "next/link";
 import Button from "../ui/button";
 import Image from "next/image";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
-import { div } from "framer-motion/client";
 
 const megaMenuItems = [
   {

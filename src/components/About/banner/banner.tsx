@@ -3,7 +3,7 @@ import CursorMovement from "@/utils/cursoreMoving";
 import Image from "next/image";
 import React from "react";
 
-const ServiceBanner = () => {
+const AboutBanner = () => {
   return (
     <>
       <CursorMovement />
@@ -47,4 +47,4 @@ const ServiceBanner = () => {
   );
 };
 
-export default ServiceBanner;
+export default AboutBanner;
